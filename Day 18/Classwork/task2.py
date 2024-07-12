@@ -4,6 +4,9 @@
 
 
 
-num1=int(input('please enter your number'))
-num2=int(input('please enter your number'))
-for i in range(num1,num2):
+num1=int(input('please enter your number: '))
+num2=int(input('please enter your number: '))
+list=[]
+for num in range(num1,num2):
+    list.append(num)
+print(list)
