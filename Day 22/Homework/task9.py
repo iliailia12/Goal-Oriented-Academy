@@ -11,4 +11,4 @@ def palindrom_check(strng):
         return False
     
 print(palindrom_check('mom'))
-print(palindrom_check('ilio'))
+print(palindrom_check('iliolen'))
