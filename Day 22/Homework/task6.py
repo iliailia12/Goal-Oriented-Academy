@@ -1,6 +1,13 @@
-'''2. შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და აბრუნებს მათ ნამრავლს'''
+'''6. შექმენით ფუნქცია, რომელიც პოულობს ყველაზე გრძელ string'ს string'ების სიაში.'''
 
-def multiply(num1,num2):
-    return num1 * num2
 
-print(multiply(4, 4))
+def longest_string(list):
+    len_list = []
+    for string in list:
+        len_list.append(len(string))
+    
+    for i in range (len(list)):
+        if len_list[i] == max(len_list):
+            return list[i]
+
+print(longest_string(['kviciani','ilia','gio']))

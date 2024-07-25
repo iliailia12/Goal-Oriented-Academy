@@ -1,8 +1,14 @@
-'''1. შექმენით ფუნქცია, რომელიც იღებს რაიმე რიცხვს და აბრუნებს მასზე 5'ით მეტს.'''
+'''.5 შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს True-ს თუ ის 
+არის Palindrome (ანუ იგივენაირად იკითხება მარცნიდანაც და 
+მარჯვნიდანაც მაგალითად: "wow") და სხვა შემთხვევაში False-ს.'''
 
 
-def random_number(num):
-    return num + 5   
 
-print(random_number(1))
-
+def palindrom_check(strng):
+    if strng==strng[::-1]:
+        return True
+    else:
+        return False
+    
+print(palindrom_check('mom'))
+print(palindrom_check('iliolen'))

@@ -1,12 +1,12 @@
-'''7. შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს (რა არის ფაქტორიალი: 
-https://en.wikipedia.org/wiki/Factorial).'''
+'''11. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ყველა ელემენტის ჯამს.'''
 
 
-def factorial(num):
-    product = 1
-    for i in range(1, num + 1):
-        product = product * i
+def sum_of_elements(list):
+    total = 0
+    for num in list:
+        total += num
+    return total
 
-    return product
-
-print(factorial(6))
+print(sum_of_elements([1, 2, 3, 4, 5]))
+print(sum_of_elements([-1, 5, 7, -3]))
+print(sum_of_elements([]))

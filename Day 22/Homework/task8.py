@@ -1,14 +1,7 @@
-'''4. შექმენით ფუნქცია, რომელიც იღებს string'ების list'ს და აბრუნებს ამ string'ების სიგრძეების
-list'ს (გამოიყენეთ ფუნქცია len()).'''
+'''8. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს
+ ორივე list'იდან მაქსიმალური რიცხვების ჯამს.'''
 
+def max_sum(list1,list2):
+    return max(list1)+max(list2)
 
-
-def lengths_convert(list):
-    res=[]
-    for string in list:
-        res.append(len(string))
-
-    return res
-
-print(lengths_convert(['ilo','lexuxi','futball', 'luka']))
-
+print(max_sum([1,5,9,4,7,6,2],[1,2,3,4,5,6,7,8]))

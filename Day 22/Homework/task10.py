@@ -1,13 +1,21 @@
-'''6. შექმენით ფუნქცია, რომელიც პოულობს ყველაზე გრძელ string'ს string'ების სიაში.'''
+'''10. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ 
+სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.'''
 
-
-def longest_string(list):
-    len_list = []
-    for string in list:
-        len_list.append(len(string))
+def difference_max_min(nums):
+    if not nums:
+        return None
     
-    for i in range (len(list)):
-        if len_list[i] == max(len_list):
-            return list[i]
+    max_num = max(nums)
+    min_num = max(nums)
 
-print(longest_string(['kviciani','ilia','gio']))
+    difference = max_num-min_num
+
+    return difference
+
+nums1 = [3, 6, 2, 9]
+nums2 = [6, 1, 9, 4, 10]
+nums3 = [-10, 0, 20, -30]
+
+print(difference_max_min(nums1))
+print(difference_max_min(nums2))
+print(difference_max_min(nums3))

@@ -1,7 +1,14 @@
-'''8. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს
- ორივე list'იდან მაქსიმალური რიცხვების ჯამს.'''
+'''12. შექმენით ფუნქცია, რომელიც იღებს string'ს და
+ აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.'''
 
-def max_sum(list1,list2):
-    return max(list1)+max(list2)
+def count_vowels(s):
+    vowels = 'abcdefghijKLMN'
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count 
 
-print(max_sum([1,5,9,4,7,6,2],[1,2,3,4,5,6,7,8]))
+print(count_vowels('hello world'))
+print(count_vowels('goa best'))
+print(count_vowels('programming'))

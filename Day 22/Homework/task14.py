@@ -1,2 +1,8 @@
-'''10. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ 
-სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.'''
+'''14. შექმენით ფუნქცია, რომელიც იღებს string's და აბრუნებს მის შებრუნებულს.'''
+
+def reverse_string(s):
+    return s[::-1]
+
+print(reverse_string('luka'))
+print(reverse_string('ilia'))
+print(reverse_string(''))

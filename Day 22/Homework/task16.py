@@ -1,3 +1,10 @@
-'''
-12. შექმენით ფუნქცია, რომელიც იღებს string'ს და
- აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.'''
+'''16. შექმენით ფუნქცია, რომელიც იღებს string'ების სიას და აბრუნებს ყველაზე გრძელ string'ს.'''
+
+def longest_string(list):
+    result = ''
+    for i in list:
+        if len(i) > len(result):
+            result = i
+    return result
+
+print(longest_string(['pencil','pen','beckraund color']))       

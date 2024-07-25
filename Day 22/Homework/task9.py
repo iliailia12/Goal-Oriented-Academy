@@ -1,14 +1,14 @@
-'''.5 შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს True-ს თუ ის 
-არის Palindrome (ანუ იგივენაირად იკითხება მარცნიდანაც და 
-მარჯვნიდანაც მაგალითად: "wow") და სხვა შემთხვევაში False-ს.'''
+'''9. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს
+ ორივე list'იდან მინიმალური რიცხვების სხვაობას.'''
 
+def min_difference(list1, list2):
+    min1=min(list1)
+    min2=min(list2)
 
+    difference=abs(min1-min2)
 
-def palindrom_check(strng):
-    if strng==strng[::-1]:
-        return True
-    else:
-        return False
-    
-print(palindrom_check('mom'))
-print(palindrom_check('iliolen'))
+    return difference
+
+list1=[22,34, 66,]
+list2=[39,44,55]
+print(min_difference(list1, list2))

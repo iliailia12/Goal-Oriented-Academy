@@ -1,6 +1,12 @@
-'''3. შექმენით ფუნქცია, რომელიც იღებს string'ს ამ string'ის სიგრძეს (გამოიყენეთ ფუნქცია len())'''
+'''7. შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს (რა არის ფაქტორიალი: 
+https://en.wikipedia.org/wiki/Factorial).'''
 
-def length(string):
-    return  len(string)
 
-print(length('ilo'))
+def factorial(num):
+    product = 1
+    for i in range(1, num + 1):
+        product = product * i
+
+    return product
+
+print(factorial(6))
