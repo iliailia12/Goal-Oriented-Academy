@@ -1,0 +1,80 @@
+'''10: გამოიყენეთ ყველა ნასწავლი html თეგი, ასევე
+ დაამატეთ დღეს ნასწავლი css-ის კუთვნილებები და გააუმჯობესეთ თქვენი პორტფოლიო (საიტი შენს შესახებ)'''
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოგელობა ჩემს შესახებ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ჩემი პორტფოლიო</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ჩემზე</a></li>
+                    <li><a href="#projects">პროექტები</a></li>
+                    <li><a href="#contact">კონტაქტი</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about" class="container">
+            <h2>ჩემზე</h2>
+            <p>გამარჯობა! მე ვარ [თქვენი სახელი], ვებსაიტის დიზაინერი და დეველოპერი. მაქვს გამოცდილება ვებსაიტების შექმნაში და დიზაინში. ჩემი მიზანია შევქმნა ვიზუალურად მიმზიდველი და ფუნქციონალური ვებსაიტები.</p>
+            <figure>
+                <img src="profile.jpg" alt="ჩემი ფოტო">
+                <figcaption>ჩემი ფოტო</figcaption>
+            </figure>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>პროექტები</h2>
+            <article>
+                <h3>პროექტი 1</h3>
+                <p>ეს არის პროექტის აღწერა. აქ შეგიძლიათ განთავსოთ დეტალები თქვენი პროექტების შესახებ.</p>
+            </article>
+            <article>
+                <h3>პროექტი 2</h3>
+                <p>ეს არის მეორე პროექტის აღწერა. აღწერეთ თუ როგორ მიაღწიეთ ამ შედეგებს და რა ტექნოლოგიები გამოიყენეთ.</p>
+            </article>
+        </section>
+
+        <aside class="container">
+            <h2>დაინტერესებული ინიციატივები</h2>
+            <p>აქ შეგიძლიათ მოათავსოთ დამატებითი ინფორმაცია ან რეკომენდაციები, რომლებიც მოიცავს თქვენს ინტერესებს ან პროფესიულ მიღწევებს.</p>
+        </aside>
+
+        <section id="contact" class="container">
+            <h2>კონტაქტი</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">სახელი:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ელ. ფოსტა:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">შეტყობინება:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [თქვენი სახელი]. ყველა უფლებები დაცულია.</p>
+        </div>
+    </footer>
+</body>
+</html>

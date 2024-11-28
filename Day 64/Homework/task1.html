@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საშინაო დავალება ნომერი 2</title>
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const checkbox = document.getElementById('checkbox').checked;
+
+            if (!name || !email || !password) {
+                alert("გთხოვთ შეავსოთ ყველა ველი.");
+                return false;
+            }
+
+            if (!checkbox) {
+                alert("გთხოვთ მონიშნოთ checkbox.");
+                return false;
+            }
+
+            console.log(name);
+            console.log( email);
+            console.log(password);
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>რეგისტრაცია ნახევარი გავაკეთე ბრო კოდიდან  ჯავა გაკეთებულია ე ბრო კოდიდან ხოლო ტვიტონ ცონსტამტა მე <br>
+        დავწერე იფი და რეტურნი გადავწერე<br> </h1>
+    <form onsubmit="return validateForm()">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" required><br>
+        <label for="email">ემაილი:</label>
+        <input type="email" id="email" required><br>
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" required><br>
+        <input type="checkbox" id="checkbox"> მე ვეთანხმები პირობებს<br>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</body>
+</html>

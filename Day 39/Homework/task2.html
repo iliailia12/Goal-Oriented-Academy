@@ -1,0 +1,81 @@
+<!--) შექმენით html-ის დოკუმენტი, მასში აიღეთ 5 div block. თითოეულ დივში 
+ მოათავსეთ 3 პარაგრაფის ელემენტი. თქვენი დავალებაა, რომ ყველა დივს ქონდეს 
+ განსხვავებული სიგანე, გამოიყენეთ % სიგანის განსაზღვრისთვის. ასევე პარაგრაფის 
+ ტექსტი უნდა იყოს განლაგებული განსხვავებულ ადგილებში - გაქვთ 3
+  ვარიანტი და თითოელ პარაგრაფს მიანიჭეთ განსხვავებული: left, center, right-->
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs with Paragraphs</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .box {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .box:nth-child(1) {
+            width: 20%;
+        }
+        .box:nth-child(2) {
+            width: 40%;
+        }
+        .box:nth-child(3) {
+            width: 60%;
+        }
+        .box:nth-child(4) {
+            width: 80%;
+        }
+        .box:nth-child(5) {
+            width: 100%;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .left-align {
+            text-align: left;
+        }
+        .center-align {
+            text-align: center;
+        }
+        .right-align {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p class="left-align">This is a left-aligned paragraph.</p>
+            <p class="center-align">This is a center-aligned paragraph.</p>
+            <p class="right-align">This is a right-aligned paragraph.</p>
+        </div>
+        <div class="box">
+            <p class="left-align">This is a left-aligned paragraph.</p>
+            <p class="center-align">This is a center-aligned paragraph.</p>
+            <p class="right-align">This is a right-aligned paragraph.</p>
+        </div>
+        <div class="box">
+            <p class="left-align">This is a left-aligned paragraph.</p>
+            <p class="center-align">This is a center-aligned paragraph.</p>
+            <p class="right-align">This is a right-aligned paragraph.</p>
+        </div>
+        <div class="box">
+            <p class="left-align">This is a left-aligned paragraph.</p>
+            <p class="center-align">This is a center-aligned paragraph.</p>
+            <p class="right-align">This is a right-aligned paragraph.</p>
+        </div>
+        <div class="box">
+            <p class="left-align">This is a left-aligned paragraph.</p>
+            <p class="center-align">This is a center-aligned paragraph.</p>
+            <p class="right-align">This is a right-aligned paragraph.</p>
+        </div>
+    </div>
+</body>
+</html>
