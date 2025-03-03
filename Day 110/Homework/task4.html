@@ -1,0 +1,28 @@
+<!-- getElementsByTagName
+Use document.getElementsByTagName to manipulate all elements of a specific tag type in your HTML document. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+ <script>
+
+    const allParagraphs = document.getElementsByTagName('p');
+    console.log(allParagraphs);
+ 
+    const firstParagraph = allParagraphs[0];
+    console.log(firstParagraph);
+
+    firstParagraph.style.color ='red';
+ </script>
+</body>
+</html>
