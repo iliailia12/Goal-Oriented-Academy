@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <p id="styledParagraph" style="color: თეთრი; background-color: შავი; font-weight: bold; font-size: 24px;">
+        ეს არის სტილიზებული პარაგრაფი inline CSS-ით.მარა არ ვიცი ეტყობა ტუ არას
+    </p>
+
+    <script>
+        
+        const paragraph = document.getElementById('styledParagraph');
+
+        
+        const styleObject = {
+            color: paragraph.style.color,
+            bgColor: paragraph.style.backgroundColor,
+            fontWeight: paragraph.style.fontWeight,
+            fontSize: paragraph.style.fontSize
+        };
+
+      
+        console.log(styleObject);
+    </script>
+</body>
+</html>

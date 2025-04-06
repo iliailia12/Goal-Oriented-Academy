@@ -1,0 +1,35 @@
+<!-- )შექმენით მწვანე წრე (100px დიამეტრი).გამოიყენეთ transform: rotate()-ის 
+ საშუალება, რომ წრე 45 გრადუსით დაატრიალოთ.
+დაამატეთ scale() ფუნქცია, რომ წრის ზომა გაიზარდოს 
+1.5-ჯერ, როცა მაუსი იქნება მასზე. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .circle {
+            width: 100px; 
+            height: 100px;
+            background-color: green; 
+            border-radius: 50%; 
+            transition: transform 0.5s; 
+        }
+
+        .circle:hover {
+            transform: rotate(45deg) scale(1.5); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="circle"></div> 
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- 5)შექმენით ღილაკი, რომელიც გაწვდილი ტექსტით იქნება სტილიზებული.ღილაკი უნდა იყოს 150px x 50px, მწვანე ფერის, ტექსტი ცენტრში.
+Hover-ის დროს:მისი ფერი უნდა შეიცვალოს ყვითელზე.ღილაკი უნდა გაიზარდოს (scale(1.2)).დაემატოს ოდნავ დახრის ეფექტი (rotate(5deg)).
+ ყველა ცვლილება უნდა იყოს გლუვი transition (0.8 წამი) გამოყენებით. --> 
+
+
+
+
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Button</title>
+    <style>
+        .button {
+            width: 150px;
+            height: 50px; 
+            background-color: green; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center; 
+            line-height: 50px; 
+            cursor: pointer; 
+            transition: background-color 0.8s, transform 0.8s; 
+        }
+
+        .button:hover {
+            background-color: yellow; 
+            transform: scale(1.2) rotate(5deg); 
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button">Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Illo voluptatem deleniti corrupti illum, maxime, inventore, sed voluptatum placeat odio velit reprehenderit. Assumenda accusamus fuga esse mollitia 
+        incidunt, nisi inventore dignissimos.</button> 
+
+</body>
+</html>

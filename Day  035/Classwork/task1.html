@@ -1,0 +1,44 @@
+<!--4) გამოიყენეთ დესედანტი სელექტორი რომ აირჩიოთ მშობელი ელემენტით შვილი
+ ელემენტი, ახსენით რა არის დესედანტი სელექტორი, აგრეთვე ერთროულად
+ რამდენიმე ელემენტს მიანიჭეთ ერთი და იგივე სტილები გამოიყენეთ ,-->
+
+
+ 
+!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Example</title>
+    <style>
+        /* მშობელი ელემენტის შვილი ელემენტები */
+        .container p {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        /* ერთი და იგივე სტილი რამდენიმე ელემენტისთვის */
+        .container h1,
+        .container h2 {
+            font-family: 'Georgia', serif;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>დასათაურებელი ტექსტი</h1>
+        <p>პარაგრაფი 1: ეს არის პარაგრაფი მშობელი ელემენტის შიგნით, რომელიც იღებს სტილს დესედანტი სელექტორით.</p>
+        <p>პარაგრაფი 2: იგივე სტილი ამ პარაგრაფსაც მიენიჭება, რადგან ის ასევე მშობელი ელემენტის შიგნით მდებარეობს.</p>
+        <h2>წარწერა მეორე დონის</h2>
+        <p>პარაგრაფი 3: კიდევ ერთი პარაგრაფი, რომელიც იმავე სტილის მიხედვით გამოიყურება.</p>
+    </div>
+
+</body>
+</html>

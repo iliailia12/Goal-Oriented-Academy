@@ -1,0 +1,24 @@
+<!-- html ში შექმენით სამი ელემენტი, button, h1, input. თქვეი დავალებაა js ში შექმნათ პროგრამა, რომელიც input ში შეტანილ მნიშვნელობა მიანიჭებს h1 ს და შემდეგ ვებსაიტზე გამოვა 
+კონტენტი, გამოიყენეთ button ელემენტი, იმისთვის, რომ input ში შეტანილი მნიშვნელობა მიანიჭოთ h1  - ს. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <input type="text" id="inputField" placeholder="Enter text here">
+    <button onclick="updateHeading()">ჰედინგის შეცვლა</button>
+
+    <script>
+        function updateHeading() {
+            const input = document.getElementById('inputField').value;
+            document.querySelector('h1').innerText = input;
+        }
+    </script>
+</body>
+</html>

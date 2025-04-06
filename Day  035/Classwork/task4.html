@@ -1,0 +1,49 @@
+<!--1)  შექმენით 5 პარაგრაფი აქედა, პირველ სამს უნდა ჰქონდეს ერთიდაიგივე 
+სტილები ხოლო მეორე ორსაც ერთი და იგივე სტილები, შექმენით ორი ჯგუფი და აირჩიეთ ეს ორი ჯგუფი internal css დახმარებით (edited)
+-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        /* პირველი ჯგუფი (პარაგრაფები 1-3) */
+        .group1 {
+            font-family: 'Verdana', sans-serif;
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        /* მეორე ჯგუფი (პარაგრაფები 4-5) */
+        .group2 {
+            font-family: 'Times New Roman', serif;
+            color: #34495e;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-right: 5px solid #e74c3c;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- პირველი ჯგუფი -->
+    <div class="group1">
+        <p>პარაგრაფი 1: ეს არის პირველი ჯგუფის პარაგრაფი. იგი გამორჩეულია კონკრეტული ფონით, ფერით და ზღვრულ სტილით.</p>
+        <p>პარაგრაფი 2: მეორე პარაგრაფი იმავე ჯგუფიდან იგივე სტილით, რაც პირველი.</p>
+        <p>პარაგრაფი 3: მესამე პარაგრაფი ასევე იმავე სტილით. ეს სტილი ქმნის თანმიმდევრულ ვიზუალურ ეფექტს.</p>
+    </div>
+
+    <!-- მეორე ჯგუფი -->
+    <div class="group2">
+        <p>პარაგრაფი 4: მეორე ჯგუფის პარაგრაფი განსხვავებული სტილით, რაც ხაზს უსვამს მისი უნიკალურობას.</p>
+        <p>პარაგრაფი 5: მეორე ჯგუფის კიდევ ერთი პარაგრაფი იმავე სტილით, რაც ანალოგიურად გვიჩვენებს დიზაინის თანმიმდევრობას.</p>
+    </div>
+
+</body>
+</html>

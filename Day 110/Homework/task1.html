@@ -1,0 +1,31 @@
+<!-- კომენტარების დახმარებით ახსენით თუ რა დანიშნულება აქვს innerHTML - ს და innerText - ს, ასევე დაწერეთ მათ შორის განსხვავებები.
+  - მოიყვანეთ მაგალითებიც. -->
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>InnerHTML vs InnerText Example</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>InnerHTML vs InnerText Example</h2>
+      <p id="demo"></p>
+      <button onclick="changeText()">Change Text</button>
+      </div>
+      <script>
+        function changeText() {
+            var text = "<b>Hello</b>, <i>World!</i>";
+            document.getElementById("demo").innerHTML = text;
+            document.getElementById("demo").innerText = text;
+            }
+      </script>
+      </body>
+      </html>

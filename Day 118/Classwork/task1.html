@@ -1,0 +1,39 @@
+<!-- შექმენით ვებ-გვერდი, რომელიც გადაიყვანს ტემპერატურას ცელსიუსიდან ფარენჰეიტში და პირიქით.
+შექმენით input ველი ტემპერატურის შესაყვანად.
+შექმენით ღილაკი "გადაყვანა".
+შექმენით div ელემენტი, სადაც გამოჩნდება შედეგი.
+
+JavaScript ფუნქციონალი:
+
+  
+ღილაკზე დაჭერისას, წაიკითხეთ ტემპერატურა input ველიდან და ერთეული input ველიდან.
+შექმენით ფუნქცია, რომელიც გადაიყვანს ტემპერატურას არჩეული ერთეულის მიხედვით.
+ცელსიუსიდან ფარენჰეიტში გადასაყვანად გამოიყენეთ ფორმულა: F = (C * 9/5) + 32.
+ფარენჰეიტიდან ცელსიუსში გადასაყვანად გამოიყენეთ ფორმულა: C = (F - 32) * 5/9. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function convertTemp() {
+            let temp = document.getElementById('temp').value;
+            let unit = document.getElementById('unit').value;
+            let result = document.getElementById('result');
+            if (unit == 'celsius') {
+                result.innerHTML = (temp * 9/5) + 32 + ' F';
+            } else {
+                result.innerHTML = (temp - 32) * 5/9 + ' C';
+            }
+        }
+    </script>
+</body>
+</html>
