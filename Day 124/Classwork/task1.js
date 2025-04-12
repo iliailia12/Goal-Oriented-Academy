@@ -43,3 +43,4 @@ const productNamesReversed = products.reduceRight((acc, product) => acc + (acc ?
 console.log("Product Names Reversed:", productNamesReversed);
 
 
+//  მეტის დაწერა ვერ მოვახერხე
