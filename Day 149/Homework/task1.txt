@@ -1,0 +1,15 @@
+Task 2: Convert and Stringify
+Objective: Convert a JavaScript object to a JSON string.
+const user = {
+  username: "masterjaneza",
+  loggedIn: true,
+  favorites: ["React", "Tailwind", "JSON"]
+}; 
+.
+Tasks to complete:
+
+Convert the user object into a JSON string.
+
+Log the JSON string.
+
+What happens if one of the values is a function? Try it and explain
