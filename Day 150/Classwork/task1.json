@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "Ilia kviciani",
+  "age": 14,
+  "email": "ნაღდ იმეილს ვერ დავწერ@.com",
+  "address": {
+    "street": "123 Tbilisi St",
+    "city": "Tbilisi",
+    "country": "Georgia"
+  },
+  "phoneNumbers": [
+    "+995 555 123456",
+    "+995 599 654321"
+  ],
+  "isActive": true
+}
+
