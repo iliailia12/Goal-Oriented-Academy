@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Facts Fetcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #fact {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Number Facts Fetcher</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number..." />
+    <button onclick="getFact()">Get Fact</button>
+    <p id="fact" class="hidden"></p>
+  </div>
+
+  <script>
+    function getFact() {
+      const number = document.getElementById("numberInput").value;
+      const url = number
+        ? `http://numbersapi.com/${number}`
+        : `http://numbersapi.com/random`;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(fact => {
+          const factElement = document.getElementById("fact");
+          factElement.textContent = fact;
+          factElement.classList.remove("hidden");
+        })
+        .catch(() => {
+          const factElement = document.getElementById("fact");
+          factElement.textContent = "Could not fetch fact. Try again.";
+          factElement.classList.remove("hidden");
+        });
+    }
+  </script>
+</body>
+</html>
