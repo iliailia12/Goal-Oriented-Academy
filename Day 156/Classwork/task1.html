@@ -1,0 +1,184 @@
+<!--    Random User Generator
+   API: https:  randomuser.me api 
+   🎯 Goal: On button click, fetch and display a random person’s name, picture, and email.
+   💡 Bonus: Add a "Next User" button to load a new one.
+   დრო: 15წ -->
+
+
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Random User Generator using jQuery</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    transition: transform 0.2s;
+}
+
+.wrapper:hover {
+    transform: scale(1.02);
+}
+
+.img-area {
+    margin: 20px 0;
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 20px 1px grey;
+}
+
+#name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.horizon {
+    margin: 20px 0;
+}
+
+.info {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    #photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="img-area">
+            <div class="inner-area">
+                <img src= "https://media.geeksforgeeks.org/wp-content/uploads/20230816223829/geeksgforgeeks-logo-1.png"
+                    id="photo" />
+            </div>
+        </div>
+        <div id="name">John Doe</div>
+        <hr class="horizon" />
+        <div class="info">
+            <p>First Name : <span id="first">John</span></p>
+            <p>Last Name : <span id="last">Doe</span></p>
+            <p>Gender : <span id="gender">Male</span></p>
+            <p>Location : <span id="street">Earth</span></p>
+            <p>Phone : <span id="phone">333-333-2222</span></p>
+            <p>Email : <span id="email">test@gmail.com</span></p>
+        </div>
+
+        <button id="btn">Random Person</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function () {
+    $("#btn").click(function () {
+        $("#btn").prop("disabled", true);
+        $("#btn").text("Loading...");
+        getPerson();
+    });
+
+    function getPerson() {
+        const url = "https://.../api/";
+
+        $.get(url)
+            .done(function (data) {
+                const person = data.results[0];
+                showData(person);
+            })
+            .fail(function () {
+                // Handle error here
+                alert("Failed to fetch data. Please try again.");
+            })
+            .always(function () {
+
+                $("#btn").prop("disabled", false);
+                $("#btn").text("Random Person");
+            });
+    }
+
+    function showData(person) {
+        $("#name").text(`${person.name.first} ${person.name.last}`);
+        $("#first").text(person.name.first);
+        $("#last").text(person.name.last);
+        $("#street").text(person.location.street.name);
+        $("#phone").text(person.phone);
+        $("#email").text(person.email);
+        $("#gender").text(person.gender);
+
+        $("#photo").attr("src", person.picture.large);
+    }
+});
+    </script>
+</body>
+
+</html>
