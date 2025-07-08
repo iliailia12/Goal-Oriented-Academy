@@ -1,0 +1,69 @@
+// 🍵 Async/Await Task: "Boil Water for Tea"
+// Scenario:
+// You are making tea. To do it, you need to follow these exact steps in order, and each one takes time (simulated with setTimeout inside Promises).
+
+// 🧩 Steps:
+// 1. Boil water – Takes 2 seconds. Log: "Water is boiling..."
+
+// 2. Add tea bag – Takes 1 second. Log: "Tea bag added."
+
+// 3. Steep tea – Takes 3 seconds. Log: "Tea is steeping..."
+
+// 4. Ready to drink – No delay. Just log: "Tea is ready to drink!"
+
+
+-
+/ ☕ Async/Await Task: "Brew Coffee"
+// Scenario:
+// You’re making a perfect cup of coffee.
+
+// 🧩 Steps:
+// 1. Grind beans – 1.5 sec → "Grinding beans..."
+// 2. Boil water – 2 sec → "Water is boiling..."
+// 3. Brew coffee – 3 sec → "Brewing coffee..."
+// 4. Pour and serve – no delay → "Coffee is ready!"
+
+-
+// 🍞 Async/Await Task: "Make Toast"
+// Scenario:
+// Morning breakfast vibes. Toast is on the way.
+
+// 🧩 Steps:
+// 1. Put bread in toaster – 1 sec → "Bread in toaster..."
+// 2. Toasting – 2.5 sec → "Toasting..."
+// 3. Butter it – 1 sec → "Spreading butter..."
+// 4. Done – no delay → "Toast is ready!"
+
+
+-
+// 🚗 Async/Await Task: "Morning Commute"
+// Scenario:
+// Getting to work with real-world delays.
+
+// 🧩 Steps:
+// 1. Start engine – 1 sec → "Engine started..."
+// 2. Drive – 4 sec → "Driving..."
+// 3. Traffic jam – 3 sec → "Stuck in traffic..."
+// 4. Arrived – no delay → "You’ve arrived!"
+
+
+-
+// 🧼 Async/Await Task: "Do Laundry"
+// Scenario:
+// Clean clothes cycle. The sacred weekend ritual.
+
+// 🧩 Steps:
+// 1. Wash clothes – 3 sec → "Washing..."
+// 2. Rinse – 2 sec → "Rinsing..."
+// 3. Spin – 1.5 sec → "Spinning..."
+// 4. Done – no delay → "Laundry complete!"
+-
+// 🍝 Async/Await Task: "Cook Pasta"
+// Scenario:
+// Time to chef it up, Italian-style.
+
+// 🧩 Steps:
+// 1. Boil water – 2 sec → "Water boiling..."
+// 2. Add pasta – 1 sec → "Pasta added..."
+// 3. Cook – 5 sec → "Cooking pasta..."
+// 4. Drain and serve – no delay → "Pasta is ready!"

@@ -1,0 +1,59 @@
+// 🍳 Async/Await Task: "Make an Omelette"
+// 🧩 Steps:
+// 1. Crack eggs – 1 sec → "Cracking eggs..."
+// 2. Whisk – 1 sec → "Whisking..."
+// 3. Cook on pan – 3 sec → "Cooking omelette..."
+// 4. Serve – no delay → "Omelette is ready!"
+
+
+// 🧽 Async/Await Task: "Clean the Room"
+// 🧩 Steps:
+// 1. Pick up clothes – 1.5 sec → "Picking up clothes..."
+// 2. Vacuum floor – 2 sec → "Vacuuming..."
+// 3. Make bed – 1 sec → "Making bed..."
+// 4. Room is clean – no delay → "Room is spotless!"
+
+
+// 🎥 Async/Await Task: "Upload a YouTube Video"
+// 🧩 Steps:
+// 1. Render video – 4 sec → "Rendering..."
+// 2. Upload – 3 sec → "Uploading..."
+// 3. Add title & tags – 1.5 sec → "Metadata added..."
+// 4. Published – no delay → "Video is live!"
+
+
+
+// 🧳 Async/Await Task: "Pack for a Trip"
+// 🧩 Steps:
+// 1. Choose clothes – 1.5 sec → "Picking outfits..."
+// 2. Pack suitcase – 2 sec → "Packing..."
+// 3. Double-check list – 1 sec → "Checking items..."
+// 4. Done – no delay → "Ready to travel!"
+
+
+// 🖥️ Async/Await Task: "Turn On Your PC"
+// 🧩 Steps:
+// 1. Push power button – 0.5 sec → "Powering on..."
+// 2. Boot OS – 2.5 sec → "Booting up..."
+// 3. Login – 1 sec → "Logging in..."
+// 4. Desktop ready – no delay → "System is ready!"
+"Survive the Day as a JavaScript Dev"
+// 🧠 Scenario:
+// You’re a modern JavaScript developer. It's Monday. You have to wake up, do your morning routine, finish client work, deploy a project, and crash into bed—all in order, all simulated with async/await and setTimeout. Each step logs to the console. Each step has a fake delay. Don’t mess up… the client is watching 👀.
+
+// 📋 Objectives (aka the Steps):
+
+
+
+// Structure:
+
+
+// 1. Wake up – 1 sec → "Waking up..."
+// 2. Make coffee – 2 sec → "Brewing coffee..."
+// 3. Check emails – 1.5 sec → "Reading emails..."
+// 4. Fix urgent bug – 3 sec → "Fixing production bug..."
+// 5. Attend meeting – 2 sec → "Zoom meeting... yawn"
+// 6. Push code to GitHub – 1 sec → "Pushing commits..."
+// 7. Deploy to production – 2.5 sec → "Deploying..."
+// 8. Dinner and Netflix – 1 sec → "Unwinding with food and streaming..."
+// 9. Sleep – no delay → "Day complete. Zzz..."
