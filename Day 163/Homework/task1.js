@@ -1,0 +1,14 @@
+// გააკეთეთ 5 მაგალითი localStorage - ის თითო ატრიბუტით რაც ვისწავლეთ გაკვეთილზე
+
+// localStorage.setItem(key, value)
+
+// localstorage.getItem(key)
+
+// localStorage.removeItme(key)
+
+// localStorage.clear()
+
+// localStorage.length
+
+
+
