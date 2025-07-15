@@ -1,0 +1,172 @@
+კომენტარების გამოყენებით, ახსენით თუ რა არის Local Storage, რისთვის გამოიყენება იგი და რა სარგებელი აქვს მას სხვა storage - დან განსხვავებით.
+
+კომენტარების გამოყენებით, ახსენით თუ რამდენი მეთოდი აქვს Local Storage - ს, რა მეთოდებია ისინი და რისთვის გამოიყენება.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 164:
+
+# Task 1: "Hello LocalStorage" 
+Objective: Store and retrieve a user's name.
+
+Instructions:
+
+1. Create an input field and a button.
+
+2. When the button is clicked, store the name in Local Storage.
+
+3. When the page reloads, greet the user with the stored name.
+
+
+
+# Task 2: "Client-Side Cart System" (Hard)
+
+Objective: Simulate a shopping cart using Local Storage.
+
+Instructions:
+
+1. Create a list of products with "Add to Cart" buttons.
+
+2. Store cart items in Local Storage.
+
+3. Show cart items on a separate "cart" page.
+
+4. Update quantities, remove items, and calculate total.
+
+
+
+
+# Task 3: "Mini Streak Tracker" (Medium-Hard)
+
+Description:
+Let the user click a button once per day to maintain a “streak” — like meditation apps or GitHub commits. Local Storage will store the last checked-in date and current streak count.
+
+Features:
+
+ - "Check-in" button
+
+ - Update and display current streak
+
+ - Reset if the user misses a day
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Client-Side Register & Login System
+🎯 Objective:
+Build a secure-ish, persistent login/register system using JavaScript and Local Storage, without a backend.
+
+
+Requirements:
+Registration Flow
+
+ 
+The user must enter:
+
+    
+A unique username (no      duplicates allowed)
+
+    
+A password (minimum 6 characters)
+The system should:
+
+ 
+Validate that both fields are filled
+
+ 
+Validate that the password is at least 6 characters long
+
+ 
+Check if the username already exists in Local Storage
+
+ 
+If valid, save the user credentials in Local Storage
+
+ 
+Show a message: "Registration successful" or appropriate error
+Login Flow
+
+
+
+
+The user must enter:
+
+    
+A valid username
+
+    
+The matching password
+The system should:
+
+ 
+Check if the username exists in Local Storage
+
+ 
+Verify that the password matches
+
+ 
+If successful:
+
+     
+Store the login status in Local Storage (e.g., with a loggedInUser key)
+
+   
+Redirect or reveal a "dashboard" or "welcome" section
+
+ 
+If invalid:
+
+ 
+Show a message: "Invalid username or password"
+
+
+
+
+
+
+
+
+
+
+
+Logout
+There must be a Logout button that:
+
+    
+Clears the login status from Local Storage
+
+    
+Returns the user to the login/register screen

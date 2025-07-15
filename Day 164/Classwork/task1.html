@@ -1,0 +1,119 @@
+<!-- შექმენით ფუნქცია, სადაც მომხმარებელმა უნდა შემოიტანოს მონაცემები. სახელი, გვარი, ასაკი, სტატუსი და პაროლი. შემდგომ თქვენ უნდა შეამოწმოთ 
+ შეტანილი მნიშვნელობები არის თუ არა სწორი. თუ სწორია, მაშინ უნდა გამოვიდეს 'Access Granted', ხოლო თუ არასწორია უნდა გამოვიდეს 'Access Denied'. -->
+
+
+
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #5c9ded;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5c9ded;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3b7bd8;
+    }
+
+    .message {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .message.show {
+      opacity: 1;
+    }
+
+    .success {
+      color: green;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .error {
+      color: red;
+      animation: shake 0.4s ease;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>ავტორიზაცია</h2>
+    <input type="text" id="firstName" placeholder="სახელი">
+    <input type="text" id="lastName" placeholder="გვარი">
+    <input type="number" id="age" placeholder="ასაკი">
+    <input type="text" id="status" placeholder="სტატუსი (მაგ: student)">
+    <input type="password" id="password" placeholder="პაროლი">
+    <button onclick="validateForm()">შესვლა</button>
+    <div class="message" id="message"></div>
+  </div>
+</body>
+</html>
