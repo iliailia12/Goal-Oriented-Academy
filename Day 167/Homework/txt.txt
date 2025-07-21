@@ -1,0 +1,62 @@
+Task 1: Confirm Deletion with Dual Response
+Create a modal that asks:
+"Are you sure you want to delete this file?"
+
+ 
+Show Confirm and Cancel buttons.
+
+  
+If confirmed, show another modal: "File deleted ✅"
+
+  
+If cancelled, show: "Action cancelled ❌"
+Task 2: Input Email and Validate
+Create a modal that asks for an email address.
+
+ 
+Use input: 'email'.
+
+ 
+If confirmed, show a second modal displaying the email:
+"You entered: user@example.com"
+
+ 
+If input is empty or invalid, block submission.
+ 
+Task 3: Loading Then Success
+Create a modal that shows a loader with "Processing..."
+
+ 
+After 3 seconds, update the modal to show:
+
+     
+Title: "Success!"
+
+     -Icon: ✅
+
+     
+Message: "Your request has been completed."
+
+      
+Auto-close after 2 seconds.
+ 
+Task 4: Select Option from Dropdown
+Create a modal with a select input:
+
+ 
+Options: "Red", "Green", "Blue"
+
+ 
+On confirm, show the selected color in the next modal:
+
+      
+"You selected: Green" (etc.)
+ 
+Task 5: Chained Modals (Quiz Style)
+Create a sequence:
+
+Ask: "What's 2 + 2?" (input)
+
+If correct ("4"), show: "Correct! 🎉"
+
+If wrong, show: "Oops. Try again!"

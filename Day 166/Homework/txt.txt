@@ -1,0 +1,26 @@
+Task 1: Your First SweetAlert Pop-Up
+Goal: Show a basic popup with a title, text, and an icon.
+
+💡 Description:
+Create a button in HTML. When clicked, it should trigger a SweetAlert2 popup that says something like “Hello World!” with an info icon.
+Task 2: Style Your Modal with Custom Classes
+Goal: Customize the look of your popup by adding your own CSS classes.
+
+💡 Description:
+Create a SweetAlert2 popup with styled buttons (e.g., Bootstrap or your own CSS classes).
+Task 3: Confirm Before Deleting
+Goal: Create a confirmation dialog with “Yes” and “No” options.
+
+💡 Description:
+Simulate a delete button. When clicked, it should ask, “Are you sure you want to delete this?” and handle the user's response. 
+Task 4: Ask for User Input
+Goal: Show a prompt that asks the user to enter their name, then greet them.
+
+💡 Description:
+Use input: 'text' to ask for a name. When they submit, show another popup that says “Nice to meet you, [name]!” 
+Task 5: Auto-Close Notification
+Goal: Show a notification that disappears after 3 seconds with a progress bar.
+
+💡 Description:
+Make a popup that doesn’t need user confirmation—it just appears and fades away. 
+https://sweetalert2.github.io/ - შედით ვებსაიტზე და თქვენით ისწავლეთ დამატებითი თვისებები და მეთოდები. ასევე custom class 

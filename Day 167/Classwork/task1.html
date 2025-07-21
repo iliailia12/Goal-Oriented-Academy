@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SweetAlert2 Custom Class Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    .my-custom-popup {
+      background-color: #1e3a8a; 
+      color: white;              
+      border-radius: 15px;
+      font-family: 'Arial', sans-serif;
+    }
+
+
+    .my-confirm-button {
+      background-color: #10b981 !important; 
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showCustomAlert()">Click me</button>
+
+  <script>
+    function showCustomAlert() {
+      Swal.fire({
+        title: 'მოგესალმებით!',
+        text: 'ეს არის alert custom სტილით.',
+        icon: 'info',
+        customClass: {
+          popup: 'my-custom-popup',
+          confirmButton: 'my-confirm-button'
+        },
+        confirmButtonText: 'გასაგებია'
+      });
+    }
+  </script>
+</body>
+</html>
+  

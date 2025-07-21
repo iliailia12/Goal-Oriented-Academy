@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SweetAlert2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .my-popup {
+      font-family: 'Segoe UI', sans-serif;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <h2>SweetAlert2 დავალება s</h2>
+
+  <!-- დავალება  1 -->
+  <button class="btn btn-primary my-2" onclick="showHello()">დავალება  1: Hello World</button>
+
+  <!-- დავალება  2 -->
+  <button class="btn btn-success my-2" onclick="showStyledPopup()">დავალება  2: Styled Modal</button>
+
+  <!-- დავალება  3 -->
+  <button class="btn btn-danger my-2" onclick="confirmDelete()">დავალება  3: Confirm Before Delete</button>
+
+  <!-- დავალება  4 -->
+  <button class="btn btn-warning my-2" onclick="askName()">დავალება  4: Ask for Name</button>
+
+  <!-- დავალება  5 -->
+  <button class="btn btn-info my-2" onclick="autoClose()">დავალება  5: Auto-Close Notification</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    // დავალება  1
+    function showHello() {
+      Swal.fire({
+        title: 'Hello World!',
+        text: 'This is a basic SweetAlert2 popup.',
+        icon: 'info'
+      });
+    }
+
+    // დავალება  2
+    function showStyledPopup() {
+      Swal.fire({
+        title: 'Custom Styled',
+        text: 'This modal uses Bootstrap button classes.',
+        icon: 'success',
+        customClass: {
+          popup: 'my-popup',
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-secondary'
+        },
+        showCancelButton: true,
+        confirmButtonText: 'Awesome!',
+        cancelButtonText: 'Dismiss',
+        buttonsStyling: false
+      });
+    }
+
+    // დავალება  3
+    function confirmDelete() {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "Do you really want to delete this?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'No, cancel!',
+        customClass: {
+          confirmButton: 'btn btn-danger',
+          cancelButton: 'btn btn-secondary'
+        },
+        buttonsStyling: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          Swal.fire('Cancelled', 'Your item is safe.', 'info');
+        }
+      });
+    }
+
+    // დავალება  4
+    function askName() {
+      Swal.fire({
+        title: 'What is your name?',
+        input: 'text',
+        inputPlaceholder: 'Enter your name',
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        inputValidator: (value) => {
+          if (!value) {
+            return 'Please enter your name!';
+          }
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(`Nice to meet you, ${result.value}!`);
+        }
+      });
+    }
+
+    // დავალება  5
+    function autoClose() {
+      let timerInterval;
+      Swal.fire({
+        title: 'Auto close in 3 seconds',
+        html: 'This will close automatically. <b></b>',
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+          const content = Swal.getHtmlContainer().querySelector('b');
+          timerInterval = setInterval(() => {
+            content.textContent = Math.ceil(Swal.getTimerLeft() / 1000) + 's';
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
