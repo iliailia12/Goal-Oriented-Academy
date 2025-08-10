@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაციის ფორმა</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>რეგისტრაციის ფორმა</h1>
+<form id="registrationForm">
+    <label for="name">სახელი:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">ემაილი:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">პაროლი:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">ვეთანხმები პირობებს</label><br><br>
+
+    <button type="submit">რეგისტრაცია</button>
+</form>
+
+<p id="message" class="error"></p>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const terms = document.getElementById('terms').checked;
+
+        
+        let message = '';
+
+        
+        if (!name || !email || !password) {
+            message = 'გთხოვთ, შეავსოთ ყველა ველი.';
+        } else if (!terms) {
+            message = 'გთხოვთ, მოაწერDოთ ხელი პირობებს.';
+        } else {
+            
+            console.log('სახელი:', name);
+            console.log('ემაილი:', email);
+            console.log('პაროლი:', password);
+            message = 'რეგისტრაცია წარმატებით განხორციელდა!';
+        }
+
+
+        document.getElementById('message').textContent = message;
+    });
+</script>
+
+</body>
+</html>

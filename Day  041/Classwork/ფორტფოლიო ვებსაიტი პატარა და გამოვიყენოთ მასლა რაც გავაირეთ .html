@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი პორტფოლიო</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">მთავარი</a></li>
+                <li><a href="#portfolio">პორტფოლიო</a></li>
+                <li><a href="#about">ჩვენ შესახებ</a></li>
+                <li><a href="#services">სერვისები</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>გამარჯობა!</h1>
+            <p>ეს არის ჩემი პირადი პორტფოლიო ვებსაიტი, სადაც შეგიძლიათ იხილოთ ჩემი სამუშაოები და გამოცდილება.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>პორტფოლიო</h2>
+            <div class="card">
+                <img src="image1.jpg" alt="პროექტი 1">
+                <h3>პროექტი 1</h3>
+                <p>ეს არის პროექტი 1-ის აღწერა, რომელიც მოიცავს სხვადასხვა ელემენტებს და ფუნქციებს.</p>
+            </div>
+            <div class="card">
+                <img src="image2.jpg" alt="პროექტი 2">
+                <h3>პროექტი 2</h3>
+                <p>ეს არის პროექტი 2-ის აღწერა, რომელიც მოიცავს საინტერესო დიზაინსა და ტექნოლოგიებს.</p>
+            </div>
+            <div class="card">
+                <img src="image3.jpg" alt="პროექტი 3">
+                <h3>პროექტი 3</h3>
+                <p>ეს არის პროექტი 3-ის აღწერა, რომელიც თვალშისაცემი თვისებებით გამოირჩევა.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>ჩვენ შესახებ</h2>
+            <p>მოკლე ინფორმაცია ჩემი გამოცდილებისა და უნარების შესახებ.</p>
+        </section>
+
+        <section id="services">
+            <h2>სერვისები</h2>
+            <p>მომხმარებელთა საჭიროებებზე დაყრდნობილი სერვისები და შეთავაზებები.</p>
+        </section>
+
+        <section id="contact">
+            <h2>კონტაქტი</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">ელ.ფოსტა:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">მესიჯი:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

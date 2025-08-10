@@ -1,0 +1,94 @@
+<!--4) ივარჯიშეთ text-decoration კუთვნილებაზე, ის მიანიჭეთ 10 სხვადასხვა პარაგრაფს და
+ თითოეულს მიეცით განსხვავებული დიზაინი. 10-ვე პარაგრაფს უნდა ქონდეს დეკორაციის ხაზი
+ , ამ ხაზს შეგიძლიათ შეუცვალოთ დიზაინი 
+(dotted, double, wavy, solid) და ფერი. თუ ფერს შეუცვლით, გამოიყენეთ rgb ან hex.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration Examples</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .underline-solid {
+            text-decoration: underline;
+            text-decoration-color: #ff0000; /* Red */
+            text-decoration-thickness: 2px;
+        }
+        .underline-dotted {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-decoration-color: rgb(0, 128, 0); /* Green */
+            text-decoration-thickness: 3px;
+        }
+        .underline-wavy {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #0000ff; /* Blue */
+            text-decoration-thickness: 4px;
+        }
+        .underline-double {
+            text-decoration: underline;
+            text-decoration-style: double;
+            text-decoration-color: #ff00ff; /* Magenta */
+            text-decoration-thickness: 2px;
+        }
+        .overline-solid {
+            text-decoration: overline;
+            text-decoration-color: rgb(255, 165, 0); /* Orange */
+            text-decoration-thickness: 3px;
+        }
+        .overline-dotted {
+            text-decoration: overline;
+            text-decoration-style: dotted;
+            text-decoration-color: #008080; /* Teal */
+            text-decoration-thickness: 2px;
+        }
+        .overline-wavy {
+            text-decoration: overline;
+            text-decoration-style: wavy;
+            text-decoration-color: #800080; /* Purple */
+            text-decoration-thickness: 3px;
+        }
+        .overline-double {
+            text-decoration: overline;
+            text-decoration-style: double;
+            text-decoration-color: #ffff00; /* Yellow */
+            text-decoration-thickness: 4px;
+        }
+        .line-through-solid {
+            text-decoration: line-through;
+            text-decoration-color: rgb(128, 0, 128); /* Dark Purple */
+            text-decoration-thickness: 2px;
+        }
+        .line-through-dotted {
+            text-decoration: line-through;
+            text-decoration-style: dotted;
+            text-decoration-color: #a52a2a; /* Brown */
+            text-decoration-thickness: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="underline-solid">This is a solid underline with red color.</p>
+        <p class="underline-dotted">This is a dotted underline with green color.</p>
+        <p class="underline-wavy">This is a wavy underline with blue color.</p>
+        <p class="underline-double">This is a double underline with magenta color.</p>
+        <p class="overline-solid">This is a solid overline with orange color.</p>
+        <p class="overline-dotted">This is a dotted overline with teal color.</p>
+        <p class="overline-wavy">This is a wavy overline with purple color.</p>
+        <p class="overline-double">This is a double overline with yellow color.</p>
+        <p class="line-through-solid">This is a solid line-through with dark purple color.</p>
+        <p class="line-through-dotted">This is a dotted line-through with brown color.</p>
+    </div>
+</body>
+</html>

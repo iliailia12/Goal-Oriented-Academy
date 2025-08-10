@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <style>
+        #paragraph1, #paragraph2, #paragraph3 {
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph1">ეს არის პირველი პარაგრაფი.</p>
+    <p id="paragraph2">ეს არის მეორე პარაგრაფი.</p>
+    <p id="paragraph3">ეს არის მესამე პარაგრაფი.</p>
+
+    <script>
+        // პირველი პარაგრაფი
+        const p1 = document.getElementById('paragraph1');
+        p1.style.color = 'მდივანისფერი';
+        p1.style.backgroundColor = 'lightgray';
+        p1.innerText = 'პირველი პარაგრაფი შეიცვალა!';
+        p1.style.fontSize = '20px';
+
+        // მეორე პარაგრაფი
+        const p2 = document.getElementById('paragraph2');
+        p2.style.color = 'მწვანე';
+        p2.style.backgroundColor = 'lightyellow';
+        p2.innerText = 'მეორე პარაგრაფი შეიცვალა!';
+        p2.style.fontSize = '22px';
+
+        // მესამე პარაგრაფი
+        const p3 = document.getElementById('paragraph3');
+        p3.style.color = 'ლურჯი';
+        p3.style.backgroundColor = 'lightpink';
+        p3.innerText = 'მესამე პარაგრაფი შეიცვალა!';
+        p3.style.fontSize = '24px';
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>araferi ar varqmem mrafers sanam ar gamoviyeneb proeqtsi</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            transform-origin: center;
+        }
+
+       
+        .box1:hover {
+            transform: rotate(45deg);
+        }
+        .box1:active {
+            transform: scale(1.2);
+        }
+
+        
+        .box2:hover {
+            transform: scale(1.5);
+        }
+        .box2:active {
+            transform: skew(10deg, 10deg);
+        }
+
+       
+        .box3:hover {
+            transform: translate(20px, 20px);
+        }
+        .box3:active {
+            transform: rotate(-30deg);
+        }
+
+        
+        .box4:hover {
+            transform: skew(20deg, 20deg);
+        }
+        .box4:active {
+            transform: translate(-20px, -20px);
+        }
+
+       
+        .box5:hover {
+            transform: rotate(30deg) scale(1.3);
+        }
+        .box5:active {
+            transform: rotate(-15deg) skew(5deg, 5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>

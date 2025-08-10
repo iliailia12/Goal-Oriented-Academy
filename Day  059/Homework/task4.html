@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <p id="styledParagraph" style="color: თეთრი; background-color: შავი; font-weight: bold; font-size: 24px;">
+        ეს არის სტილიზებული პარაგრაფი inline CSS-ით. და რვი მეტი ვერ მოვიფიქრე
+    </p>
+
+    <script>
+        
+        const paragraph = document.getElementById('styledParagraph');
+
+        
+        const paragraphStyle = paragraph;
+
+       
+        const styleObject = {
+            color: paragraphStyle.style.color,
+            bgColor: paragraphStyle.style.backgroundColor,
+            fontWeight: paragraphStyle.style.fontWeight,
+            fontSize: paragraphStyle.style.fontSize
+        };
+
+      
+        console.log(styleObject);
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!--'''4)შექმენით ცხრილი ფერადი ტექსტებით რომელშიც მოათავსებთ 20 მონაცემს
+თემა:GOA-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA მონაცემების ცხრილი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+
+        .city {
+            color: #007bff;
+        }
+
+        .population {
+            color: #28a745;
+        }
+
+        .area {
+            color: #ffc107;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GOA მონაცემების ცხრილი</h1>
+        <table>
+            <caption>GOA-ს ქვეყნების ინფორმაცია</caption>
+            <thead>
+                <tr>
+                    <th>ქვეყანა</th>
+                    <th>დედაქალაქი</th>
+                    <th>პოპულაცია</th>
+                    <th>ქვეყნის ფართობი (კვადრატული კილომეტრი)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>საქართველოს</td>
+                    <td class="city">თბილისი</td>
+                    <td class="population">3,700,000</td>
+                    <td class="area">69,700</td>
+                </tr>
+                <tr>
+                    <td>ოსეა</td>
+                    <td class="city">კარპატია</td>
+                    <td class="population">1,500,000</td>
+                    <td class="area">30,000</td>
+                </tr>
+                <tr>
+                    <td>ანდორა</td>
+                    <td class="city">ანდორა ლა ველა</td>
+                    <td class="population">77,000</td>
+                    <td class="area">468</td>
+                </tr>
+                <tr>
+                    <td>მალტის</td>
+                    <td class="city">ვალეტა</td>
+                    <td class="population">514,000</td>
+                    <td class="area">316</td>
+                </tr>
+                <!-- დასძინეთ მეტი რიგები აქ -->
+                <tr>
+                    <td>პანამა</td>
+                    <td class="city">პანამა სითი</td>
+                    <td class="population">4,200,000</td>
+                    <td class="area">75,417</td>
+                </tr>
+                <tr>
+                    <td>ჩილი</td>
+                    <td class="city">სანტიაგო</td>
+                    <td class="population">19,400,000</td>
+                    <td class="area">756,102</td>
+                </tr>
+                <tr>
+                    <td>იუგანდა</td>
+                    <td class="city">კამპალა</td>
+                    <td class="population">45,700,000</td>
+                    <td class="area">241,038</td>
+                </tr>
+                <tr>
+                    <td>კანადა</td>
+                    <td class="city">ოტტავა</td>
+                    <td class="population">38,000,000</td>
+                    <td class="area">9,984,670</td>
+                </tr>
+                <tr>
+                    <td>ბელგია</td>
+                    <td class="city">ბრუსელი</td>
+                    <td class="population">11,500,000</td>
+                    <td class="area">30,688</td>
+                </tr>
+                <tr>
+                    <td>ბოსნია და ჰერცეგოვინა</td>
+                    <td class="city">სარაევო</td>
+                    <td class="population">3,300,000</td>
+                    <td class="area">51,197</td>
+                </tr>
+                <tr>
+                    <td>ავსტრალია</td>
+                    <td class="city">კანბერა</td>
+                    <td class="population">25,700,000</td>
+                    <td class="area">7,692,024</td>
+                </tr>
+                <tr>
+                    <td>სინგაპური</td>
+                    <td class="city">სინგაპური</td>
+                    <td class="population">5,700,000</td>
+                    <td class="area">728</td>
+                </tr>
+                <tr>
+                    <td>ყაზახეთი</td>
+                    <td class="city">ნურსულტანი</td>
+                    <td class="population">19,000,000</td>
+                    <td class="area">2,724,900</td>
+                </tr>
+                <tr>
+                    <td>თურქეთი</td>
+                    <td class="city">ანკარა</td>
+                    <td class="population">82,000,000</td>
+                    <td class="area">783,356</td>
+                </tr>
+                <tr>
+                    <td>ავსტრია</td>
+                    <td class="city">ვენა</td>
+                    <td class="population">8,900,000</td>
+                    <td class="area">83,871</td>
+                </tr>
+                <tr>
+                    <td>ისლანდია</td>
+                    <td class="city">რეიკავიკი</td>
+                    <td class="population">368,000</td>
+                    <td class="area">103,000</td>
+                </tr>
+                <tr>
+                    <td>პერუ</td>
+                    <td class="city">ლიმა</td>
+                    <td class="population">32,500,000</td>
+                    <td class="area">1,285,216</td>
+                </tr>
+                <tr>
+                    <td>ვაიტნამი</td>
+                    <td class="city">ჰანოი</td>
+                    <td class="population">97,300,000</td>
+                    <td class="area">331,210</td>
+                </tr>
+                <tr>
+                    <td>ირანი</td>
+                    <td class="city">ტეჰრანი</td>
+                    <td class="population">83,000,000</td>
+                    <td class="area">1,648,195</td>
+                </tr>
+                <tr>
+                    <td>პოლონეთი</td>
+                    <td class="city">ვარშავა</td>
+                    <td class="population">38,300,000</td>
+                    <td class="area">312,696</td>
+                </tr>
+                <tr>
+                    <td>შვეიცარია</td>
+                    <td class="city">ბერნი</td>
+                    <td class="population">8,700,000</td>
+                    <td class="area">41,290</td>
+                </tr>
+                <tr>
+                    <td>მონACO</td>
+                    <td class="city">მონაკო</td>
+                    <td class="population">39,000</td>
+                    <td class="area">2.02</td>
+                </tr>
+                <tr>
+                    <td>კიბერნი</td>
+                    <td class="city">ჰონგ-კონგი</td>
+                    <td class="population">7,500,000</td>
+                    <td class="area">1,104</td>
+                </tr>
+                <tr>
+                    <td>სომალეთი</td>
+                    <td class="city">მოგადისჰუ</td>
+                    <td class="population">15,800,000</td>
+                    <td class="area">637,657</td>
+                </tr>
+                <tr
+
+
+                
+
+                

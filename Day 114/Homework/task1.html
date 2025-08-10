@@ -1,0 +1,100 @@
+<!-- ფერის შეცვლა:
+HTML-ში შექმენით ღილაკი და div ელემენტი.
+JavaScript-ში, ღილაკზე დაჭერისას, div ელემენტის ფონი შემთხვევით  ფერზე შეცვალეთ.
+სურათის შეცვლა:
+HTML-ში შექმენით სურათი და ღილაკი.
+JavaScript-ში, ღილაკზე დაჭერისას, სურათის src ატრიბუტი შეცვალეთ სხვა სურათის URL-ით. (შექმენით ორი სურათი, რომელსაც გამოიყენებთ)
+ტექსტის დამალვა/გამოჩენა:
+HTML-ში შექმენით ტექსტი და ღილაკი.
+JavaScript-ში, ღილაკზე დაჭერისას, ტექსტი დამალეთ ან გამოაჩინეთ (toggle).
+მრიცხველის გაზრდა:
+HTML-ში შექმენით ღილაკი და span ელემენტი მრიცხველის საჩვენებლად.
+JavaScript-ში, ღილაკზე დაჭერისას, მრიცხველი გაზარდეთ 1-ით და აჩვენეთ span ელემენტში.
+ქვიზი (სწორი პასუხის შემოწმება):
+HTML-ში შექმენით შეკითხვა, რამდენიმე პასუხის ვარიანტი (რადიო ღილაკები) და ღილაკი "შემოწმება".
+JavaScript-ში, ღილაკზე დაჭერისას, შეამოწმეთ, არის თუ არა არჩეული პასუხი სწორი და აჩვენეთ შედეგი. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Tasks</title>
+</head>
+<body>
+    <!-- ფერის შეცვლა -->
+    <button id="colorButton">Change Color</button>
+    <div id="colorDiv" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+
+    <!-- სურათის შეცვლა -->
+    <button id="imageButton">Change Image</button>
+    <img id="image" src="image.png" alt="Image" style="width: 100px; height: 100px;">
+
+    <!-- ტექსტის დამალვა/გამოჩენა -->
+    <button id="toggleTextButton">Toggle Text</button>
+    <p id="text">This is a text that will be toggled.</p>
+
+    <!-- მრიცხველის გაზრდა -->
+    <button id="counterButton">Increase Counter</button>
+    <span id="counter">0</span>
+
+    <!-- ქვიზი (სწორი პასუხის შემოწმება) -->
+    <div>
+        <p>What is the capital of France?</p>
+        <input type="radio" id="paris" name="quiz" value="Paris">
+        <label for="paris">Paris</label><br>
+        <input type="radio" id="london" name="quiz" value="London">
+        <label for="london">London</label><br>
+        <input type="radio" id="rome" name="quiz" value="Rome">
+        <label for="rome">Rome</label><br>
+        <button id="checkAnswerButton">Check Answer</button>
+        <p id="quizResult"></p>
+    </div>
+
+    <script>
+        // ფერის შეცვლა
+        document.getElementById("colorButton").addEventListener("click", function() {
+            let colorDiv = document.getElementById("colorDiv");
+            let randomColor = Math.floor(Math.random()*16777215).toString(16);
+            colorDiv.style.backgroundColor = "#" + randomColor;
+        });
+
+        // სურათის შეცვლა
+        document.getElementById("imageButton").addEventListener("click", function() {
+            let image = document.getElementById("image");
+            if (image.src.includes("image.png")) {
+                image.src = "image2.png";
+            } else {
+                image.src = "image.png";
+            }
+        });
+
+        // ტექსტის დამალვა/გამოჩენა
+        document.getElementById("toggleTextButton").addEventListener("click", function() {
+            let text = document.getElementById("text");
+            text.style.display = text.style.display === "none" ? "block" : "none";
+        });
+
+        // მრიცხველის გაზრდა
+        document.getElementById("counterButton").addEventListener("click", function() {
+            let counter = document.getElementById("counter");
+            counter.innerText = parseInt(counter.innerText) + 1;
+        });
+
+        // ქვიზი (სწორი პასუხის შემოწმება)
+        document.getElementById("checkAnswerButton").addEventListener("click", function() {
+            let quizResult = document.getElementById("quizResult");
+            let correctAnswer = "Paris";
+            let selectedAnswer = document.querySelector('input[name="quiz"]:checked');
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswer) {
+                    quizResult.innerText = "Correct!";
+                } else {
+                    quizResult.innerText = "Incorrect!";
+                }
+            } else {
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--  შექმენით ვებსაიტი, სადაც იქნება შემოტანილი 3 ელემენტი. 2 ელემენტი უნდა იყოს ღილაკი, ხოლო ერთი ელემენტი უნდა იყვეს დივი. 
+ პირველმა ღილაკმა უნდა გაზარდოს დივის ზომა, ხოლო მეორე ღილაკმა უნდა შეამციროს დივის ზომა.  - ამ 
+ ღილაკებს ზემოდან დააწერეთ დასახელება თუ რას აკეთებს.
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="increase()">გაზრდა</button>
+    <button onclick="decrease()">არგაზრდა</button>
+    <div id="div1" style="width: 100px; height: 100px; background-color: red;"></div>
+    <script>
+        function გაზრდა() {
+            var div = document.getElementById("div1");
+            div.style.width = "150px";
+            div.style.height = "150px";
+            }
+            function არგაზრდა(){
+                var div = document.getElementById("div1");
+                div.style.width = "50px";
+                div.style.height = "50px";
+                }
+    </script>
+</body>
+</html>

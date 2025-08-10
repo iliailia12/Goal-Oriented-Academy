@@ -1,0 +1,11 @@
+https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
+https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
+https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
+https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
+https://tailwindcss.com/docs/installation
+https://tailwindcss.com/docs/installation
+
+
+შემდეგ გაკვეთილამდე, ივარჯიშეთ flex, resposnive და grid - ზე tailwind - ში
+
+ვივარჯიშე ამათზე მაგრამ ფრონტედ მენტორი ვერ გავაკეთე როგორმე შევძლებ ფრონტედ მენტორის გარეშე კარგად დაუფლებას ჰტმლ ცსს და ჯს ზე

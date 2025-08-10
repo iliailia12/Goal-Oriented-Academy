@@ -1,0 +1,19 @@
+/* ძირითადი სტილები */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ფონური ფერის სტილი */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* რესპონსიური ფონური ფერი 400-დან 600 პიქსელამდე */
+@media (min-width: 400px) and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}

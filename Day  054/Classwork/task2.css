@@ -1,0 +1,28 @@
+@keyframes heartbeat {
+    0% {
+      transform: scale(1); 
+    }
+    25% {
+      transform: scale(1.1); 
+    }
+    50% {
+      transform: scale(1); 
+    }
+    75% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }
+  
+  .heartbeat {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: heartbeat 1.5s infinite;
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემს პორტფოლიო</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">ბიოგრაფია</a></li>
+                <li><a href="#portfolio">პროექტები</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>გამარჯობა, მე ვარ [თქვენი სახელი]</h1>
+        <p>კომპეტენცია და გამოცდილება მხატვრობაში.</p>
+    </section>
+
+    <section id="about">
+        <h2>ბიოგრაფია</h2>
+        <p>[თქვენი ბიოგრაფია]</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>პროექტები</h2>
+        <!-- პორტფოლიო ნამუშევრების გალერეა -->
+        <div class="gallery">
+            <img src="project1.jpg" alt="პროექტი 1">
+            <img src="project2.jpg" alt="პროექტი 2">
+            <!-- დაამატეთ მეტი ნამუშევრები აქ -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>კონტაქტი</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">ელ.ფოსტა:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">მესიჯი:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">გაგზავნა</button>
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

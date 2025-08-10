@@ -1,0 +1,42 @@
+ <!-- html ფაილში შექმენით 3 ელემენტი, პირველ ელემენტს მიანიჭეთ id, მეორე ელემენტს მიანიჭეთ კლასი და მესამე ელემენტი 
+ დატოვეთ ჩვეულებრივად. თქვენი დავალებაა, რომ ეს სამივე ელემენტი წამოიღოთ შესაბამისი dom ის მეთოდებით.
+როდესაც წამოიღებთ ელემენტებს მიანიჭეთ სხვადასხვა სტილი, შეუცვალეთ ფერი, უკანა ფერი, ტექსტის ზომა, ტექსტის სტილი და ა.შ
+ამასობაში შეცვალეთ წამოღებული ელემენტების კონტენტი. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="element1" class="element">Element 1</div>
+    <div class="element">Element 2</div>
+    <div id="div">Element 3</div>
+
+    <script>
+        let element1 = document.getElementById('element1');
+        let element2 = document.querySelector('.element');
+        let element3 = document.querySelector('div');
+
+        element1.style.backgroundColor ='red';
+        element2.style.backgroundColor = 'blue';
+        element3.style.backgroundColor = 'green';
+        element1.style.fontSize = '30px';
+        element2.style.fontWeight = 'bold';
+        element3.style.textDecoration = 'underline';
+        element1.style.color = 'white';
+        element2.style.color = 'white';
+        element3.style.color = 'white';
+        element1.innerHTML = 'Element 1 changed';
+        element2.innerHTML = 'Element 2 changed';
+        element3.innerHTML = 'Element 3 changed';
+
+
+    </script>
+</body>
+</html>

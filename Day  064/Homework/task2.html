@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საშინაო დავალება ნომერი 3</title>
+    <script>
+        const dateBase = [];
+
+        function registerUser() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+
+            if (!gender) {
+                alert("გთხოვთ შეარჩიოთ სქესი.");
+                return;
+            }
+
+            if (password.length < 8) {
+                alert("Password is too short.");
+                return;
+            }
+
+            const user = {
+                name: name,
+                email: email,
+                password: password,
+                gender: gender.value
+            };
+
+            dateBase.push(user);
+            console.log(dateBase);
+        }
+    </script>
+</head>
+<body>
+    <h1>რეგისტრაცია  აქაც იგივედ 16 ხაზიდან 36 ხაზამდე რესურსები მოვიძიე დანარჩენი ცემი დაწერილია ესეც გავაკეტე ბრო კოდიდან</h1>
+    <form onsubmit="event.preventDefault(); registerUser();">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" required><br>
+        <label for="email">ემაილი:</label>
+        <input type="email" id="email" required><br>
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" required><br>
+        <label>სქესი:</label><br>
+        <input type="radio" name="gender" value="მამაკაცი"> მამაკაცი<br>
+        <input type="radio" name="gender" value="ქალი"> ქალი<br>
+        <input type="radio" name="gender" value="სხვა"> სხვა<br>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</body>
+</html>

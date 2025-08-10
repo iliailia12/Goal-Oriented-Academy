@@ -1,0 +1,98 @@
+<!-- მარტივი სიის მმართველი:
+შექმენით HTML-ში unordered list (ul) და input ველი.
+შექმენით ღილაკი "დამატება".
+ღილაკზე დაჭერისას:
+წაიკითხეთ ტექსტი input ველიდან.
+შექმენით ახალი list item (li) ელემენტი.
+დაამატეთ ტექსტი li ელემენტს.
+დაამატეთ li ელემენტი ul სიას.
+დაამატეთ ღილაკი "გასუფთავება" რომელიც გაასუფთავებს სიას (ul)
+მარტივი მრიცხველი:
+შექმენით HTML-ში div ელემენტი, რომელშიც გამოჩნდება რიცხვი (საწყისი მნიშვნელობა 0).
+შექმენით ორი ღილაკი: "გაზრდა" და "შემცირება".
+
+ 
+"გაზრდა"-ზე დაჭერისას:
+წაიკითხეთ რიცხვი div ელემენტიდან.
+გაზარდეთ რიცხვი 1-ით.
+განაახლეთ რიცხვი div ელემენტში.
+
+ 
+"შემცირება"-ზე დაჭერისას:
+წაიკითხეთ რიცხვი div ელემენტიდან.
+შეამცირეთ რიცხვი 1-ით.
+განაახლეთ რიცხვი div ელემენტში.
+
+ასევე შექმენით ღილაკი, სადაც ეწერება გაზრდა და შემცირება 10 - ით, გაზრდის ღილაკზე დაჭერის შედეგად რიცხვი უნდა გაიზარდოს 10 - ით, ხოლო შემცირების ღილაკზე დასაჭერად რიცხვი უნდა შემცირდეს 10 - ით.
+ფერების შემთხვევითი გენერატორი:
+შექმენით HTML-ში div ელემენტი.
+შექმენით ღილაკი "შეცვლა".
+ღილაკზე დაჭერისას:
+შექმენით შემთხვევითი ფერი RGB ფორმატში (მაგ. rgb(255, 0, 0)).
+შეცვალეთ div ელემენტის ფონის ფერი ამ შემთხვევითი ფერით.
+დაამატეთ ტექსტი div ელემენტში, რომელიც აჩვენებს ფერის RGB მნიშვნელობას.
+მარტივი სლაიდერი:
+შექმენით HTML-ში div ელემენტი, რომელშიც გამოჩნდება სურათი (ან რაიმე მარტივი ელემენტი).
+შექმენით ორი ღილაკი: "მარცხნივ" და "მარჯვნივ".
+შექმენით JavaScript მასივი, რომელიც შეიცავს რამდენიმე სურათის (ან ელემენტის) წყაროს (ან ტექსტს).
+ღილაკებზე დაჭერისას:
+შეცვალეთ div ელემენტის შიგთავსი მასივიდან შემდეგი ან წინა ელემენტით. მარტივი ტექსტური შეტყობინების ჩვენება
+შექმენით HTML-ში input ველი ტექსტის შესაყვანად.
+შექმენით ღილაკი "ჩვენება".
+შექმენით div ელემენტი, სადაც გამოჩნდება შეტყობინება.
+ღილაკზე დაჭერისას:
+წაიკითხეთ ტექსტი input ველიდან.
+შეამოწმეთ, არის თუ არა input ველი ცარიელი.
+თუ ცარიელი არ არის, გამოიტანეთ ტექსტი div ელემენტში.
+თუ ცარიელია, გამოიტანეთ შეტყობინება "გთხოვთ შეიყვანოთ ტექსტი".
+დაამატეთ ღილაკი "გასუფთავება", რომელიც გაასუფთავებს input ველს და div ელემენტს.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertTemp() {
+            let temp = document.getElementById('temp').value;
+            let unit = document.getElementById('unit').value;
+            let result = document.getElementById('result');
+            if (unit == 'celsius') {
+                result.innerHTML = (temp * 9/5) + 32 + ' F';
+            } else {
+                result.innerHTML = (temp - 32) * 5/9 + ' C';
+            }
+        }
+        function addToList() {
+            let text = document.getElementById('text').value;
+            let li = document.createElement('li');
+            li.innerHTML = text;
+            document.getElementById('list').appendChild(li);
+        }
+        function clearList() {
+            document.getElementById('list').innerHTML = '';
+        }
+        function increaseNumber() {
+            let number = document.getElementById('number').innerHTML;
+            number++;
+            document.getElementById('number').innerHTML = number;
+        }
+        function decreaseNumber() {
+            let number = document.getElementById('number').innerHTML;
+            number--;
+            document.getElementById('number').innerHTML = number;
+        }
+        function changeColor() {
+            let color = document.getElementById('color').value;
+            document.getElementById('colorDiv').style.backgroundColor = color;
+            document.getElementById('colorDiv').innerHTML = color;
+        }
+ 
+    </script>
+</body>
+</html>

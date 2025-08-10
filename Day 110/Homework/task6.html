@@ -1,0 +1,23 @@
+<!-- innerText
+Modify the text content of an element using innerText. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP">Hello, World!</p>
+    <button onclick="modifyText()">Click me!</button>
+    
+    <script>
+        function modifyText() {
+            let p = document.getElementById("myP");
+            p.innerText = "New Text";
+        }
+    </script>
+</body>
+</html>
